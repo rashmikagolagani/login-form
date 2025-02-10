@@ -7,6 +7,11 @@ export default function Login() {
     <div>
       <h1>Log in</h1>
       <h2>to start learning</h2>
+      <form>
+        <p>Twitter Handel</p>
+        <p>Password</p>
+      </form>
+      <button>Login</button>
     </div>
   );
 }
