@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+.error{
+  color: red;
+}
+.button{
+  background-color: rgb(114, 114, 223);
+  color: white;
+}
+.login{
+  color:rgb(114, 114, 223);
+}
