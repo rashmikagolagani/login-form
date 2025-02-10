@@ -1,17 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
+import Logout from "./logout";
+import Login from "./login";
 
-export default function Login() {
+export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
     <div>
-      <h1>Log in</h1>
-      <h2>to start learning</h2>
-      <form>
-        <p>Twitter Handel</p>
-        <p>Password</p>
-      </form>
-      <button>Login</button>
+      {isAuthenticated ? (
+        <Logout onLogout={() => setIsAuthenticated(false)} />
+      ) : (
+        <Login onLogin={() => setIsAuthenticated(true)} />
+      )}
     </div>
   );
 }
